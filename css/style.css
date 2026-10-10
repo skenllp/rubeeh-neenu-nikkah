@@ -16,7 +16,7 @@
 }
 
 /* ============================================================
-   RUBEEH & NEENU — WEDDING INVITATION
+   RUBEEH & NEENU — NIKKAH INVITATION
    Design tokens
    ============================================================ */
 :root{
@@ -30,6 +30,7 @@
   --emerald: #2F4A3B;
   --emerald-deep: #1D3026;
   --plum: #6B3A44;
+  --brown-deep: #3E2415;
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-script:  'Cormorant Garamond', Georgia, serif;
@@ -693,7 +694,7 @@ img, svg{ display: block; max-width: 100%; }
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.25rem, 3vw, 1.6rem);
   font-weight: 500;
-  color: var(--emerald-deep);
+  color: var(--brown-deep, #3E2415);
   margin: 0 0 .2em;
   letter-spacing: .02em;
 }
@@ -708,8 +709,8 @@ img, svg{ display: block; max-width: 100%; }
 
 .couple-card__parents{
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: .98rem;
-  font-weight: 400;
+  font-size: 1.02rem;
+  font-weight: 600;
   color: var(--ink);
   margin: 0 0 .4em;
   line-height: 1.6;

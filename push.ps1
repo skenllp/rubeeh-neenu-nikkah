@@ -1,3 +1,3 @@
-Set-Location "c:\Users\G O .COM\Desktop\rubeeh-neenu\rubeeh-neenu-wedding"
+Set-Location $PSScriptRoot
 git push --force origin main
 Write-Host "Push completed!"

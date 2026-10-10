@@ -1,5 +1,5 @@
 /* ============================================================
-   RUBEEH & NEENU — WEDDING INVITATION
+   RUBEEH & NEENU — NIKKAH INVITATION
    Vanilla JS — gate intro, countdown, scroll reveals
    ============================================================ */
 (function () {
@@ -72,7 +72,7 @@
 
   /* ---------- Countdown timer ---------- */
   // Nikkah: 24 December 2026, 11:00 AM
-  var WEDDING_DATE = new Date("2026-12-24T11:00:00");
+  var NIKKAH_DATE = new Date("2026-12-24T11:00:00");
 
   var elDays = document.getElementById("cd-days");
   var elHours = document.getElementById("cd-hours");
@@ -95,7 +95,7 @@
 
   function tickCountdown() {
     var now = new Date();
-    var diff = WEDDING_DATE.getTime() - now.getTime();
+    var diff = NIKKAH_DATE.getTime() - now.getTime();
 
     if (diff <= 0) {
       setCountdownNum(elDays, "00");
@@ -295,7 +295,7 @@
       var lines = [];
       lines.push("Assalamu Alaikum \uD83C\uDF39");
       lines.push("");
-      lines.push("*Rubeeh & Neenu — Wedding RSVP*");
+      lines.push("*Rubeeh & Neenu — Nikkah RSVP*");
       lines.push("");
       lines.push("*Name:* " + name);
       lines.push("*Attendance:* " + (attending ? "\u2705 Joyfully Accepts" : "\u274C Regretfully Declines"));
@@ -306,7 +306,7 @@
         lines.push("*Message:* " + message);
       }
       lines.push("");
-      lines.push("_Sent from the wedding invitation_");
+      lines.push("_Sent from the nikkah invitation_");
 
       var text = encodeURIComponent(lines.join("\n"));
       window.open("https://wa.me/" + (WA_NUMBER ? WA_NUMBER : "") + "?text=" + text, "_blank");
